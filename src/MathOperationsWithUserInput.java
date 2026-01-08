@@ -7,18 +7,17 @@ public class MathOperationsWithUserInput {
         //ask the user for two numbers
         // output the sum, difference, product, and quotient of those numbers
         System.out.print("Enter the first number: ");
-        double num1 = scanner.nextDouble();
+        int n1 = scanner.nextInt();
         System.out.print("Enter the second number: ");
-        double num2 = scanner.nextDouble();
-        double sum = num1 + num2;
-        double difference = num1 - num2;
-        double product = num1 * num2;
-        double quotient = num1 / num2;
-        System.out.println("Sum: " + sum);
-        System.out.println("Difference: " + difference);
-        System.out.println("Product: " + product);
-        System.out.println("Quotient: " + quotient);
-        scanner.close();
+        int n2 = scanner.nextInt();
+        System.out.println("Sum: " + (n1 + n2));
         
+        //souf > System.out.printf()
+        //%d => whole number
+        //%f => floating-point number
+        //%s => string
+        //%n => new line
+
+        System.out.printf("Difference: %d%n", (n1 - n2));
     }
 }
