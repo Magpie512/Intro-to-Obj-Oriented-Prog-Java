@@ -1,4 +1,4 @@
-import java.io.Console;
+import java.util.Scanner;
 
 public class Main {
     // main + tab, osvm + tab
@@ -7,11 +7,10 @@ public class Main {
         //sout + tab
         System.out.println("Hello, World!");
         
-        Console console = System.console();
-        System.out.println("Enter your name: ");
-        String name = console.readLine();
-
-        System.out.println("Hello, " + name + "!");
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
+        System.out.println("Welcome, " + name + "!");
     }
 
 }
